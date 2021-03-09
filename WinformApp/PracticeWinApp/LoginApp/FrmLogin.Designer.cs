@@ -73,7 +73,7 @@ namespace LoginApp
             // 
             // BtnLogin
             // 
-            this.BtnLogin.Image = global::LoginApp.Properties.Resources.unlock;
+            this.BtnLogin.Image = ((System.Drawing.Image)(resources.GetObject("BtnLogin.Image")));
             this.BtnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnLogin.Location = new System.Drawing.Point(186, 113);
             this.BtnLogin.Name = "BtnLogin";

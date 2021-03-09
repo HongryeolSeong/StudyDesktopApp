@@ -84,7 +84,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="unlock.png" />
+    <Content Include="pattern-lock.png" />
     <None Include="unlock %281%29.png" />
     <Content Include="unlock-_1_.ico" />
   </ItemGroup>
