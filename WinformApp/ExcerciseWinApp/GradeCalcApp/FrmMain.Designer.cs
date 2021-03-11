@@ -253,6 +253,7 @@ namespace GradeCalcApp
             this.BtnAverage.TabIndex = 24;
             this.BtnAverage.Text = "평균평점";
             this.BtnAverage.UseVisualStyleBackColor = true;
+            this.BtnAverage.Click += new System.EventHandler(this.BtnAverage_Click);
             // 
             // TxtAverage
             // 
@@ -294,6 +295,7 @@ namespace GradeCalcApp
             this.Controls.Add(this.label1);
             this.Name = "FrmMain";
             this.Text = "학점계산기";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
