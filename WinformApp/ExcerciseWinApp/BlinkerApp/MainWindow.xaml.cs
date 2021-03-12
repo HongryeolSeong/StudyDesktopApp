@@ -21,7 +21,7 @@ namespace BlinkerApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        DispatcherTimer timer = new DispatcherTimer();
+        DispatcherTimer timer;
 
         public MainWindow()
         {
@@ -45,7 +45,7 @@ namespace BlinkerApp
             timer.Tick += Timer_Tick;
         }
 
-        private void Timer_Tick(object sender, RoutedEventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
             if (BtnStarBlink.Background == Brushes.Red)
             {
