@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCalculatorApp", "WpfCalc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalogClockApp", "AnalogClockApp\AnalogClockApp.csproj", "{CE271C67-9578-4578-9330-F49604C4796D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonteCarloPiApp", "MonteCarloPiApp\MonteCarloPiApp.csproj", "{E8EFA263-636A-47FA-9B2C-EC3BB85C0BD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CE271C67-9578-4578-9330-F49604C4796D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE271C67-9578-4578-9330-F49604C4796D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE271C67-9578-4578-9330-F49604C4796D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8EFA263-636A-47FA-9B2C-EC3BB85C0BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8EFA263-636A-47FA-9B2C-EC3BB85C0BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8EFA263-636A-47FA-9B2C-EC3BB85C0BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8EFA263-636A-47FA-9B2C-EC3BB85C0BD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
