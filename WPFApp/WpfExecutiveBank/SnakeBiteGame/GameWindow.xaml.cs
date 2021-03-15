@@ -90,7 +90,7 @@ namespace SnakeBiteGame
 
         private void InitEgg()
         {
-
+            
         }
 
         private void PlayTimer_Tick(object sender, EventArgs e)
