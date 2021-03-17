@@ -1,4 +1,7 @@
-﻿namespace BookRentalShopApp.Helper
+﻿using System;
+using System.Net;
+
+namespace BookRentalShopApp.Helper
 {
     public static class Common
     {
@@ -9,5 +12,21 @@
                                           "Password=mssql_p@ssw0rd!";
 
         public static string LoginUserId = string.Empty;
+
+        internal static string GetLocalIp()
+        {
+            string localIP = "";
+            IPHostEntry host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (IPAddress iP in host.AddressList)
+            {
+                if (iP.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                {
+                    localIP = iP.ToString();
+                    break;
+                }
+            }
+
+            return localIP;
+        }
     }
 }
