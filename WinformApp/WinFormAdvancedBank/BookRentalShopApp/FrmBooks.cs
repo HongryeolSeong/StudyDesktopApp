@@ -196,6 +196,13 @@ namespace BookRentalShopApp
             colunm.Visible = false;
             colunm = DgvData.Columns[8];
             colunm.Visible = false;
+
+            colunm = DgvData.Columns[4];
+            colunm.Width = 250;
+            colunm.HeaderText = "도서명";
+
+            colunm = DgvData.Columns[0];
+            colunm.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
         }
         private void SaveData()
         {
