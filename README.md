@@ -81,7 +81,17 @@ C# 데스크톱 앱 개발 학습 리포지토리
 ##### 4. 대여 관리 화면
 ###### - 회원의 책 대여를 관리할 수 있다
 
-![결과8](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/08.png "초기 화면")
+![결과13](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/13.png "초기 화면")
 <br>
 <br>
+![결과14](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/14.png "초기 화면")
+<br>
+<br>
+![결과15](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/rental.png "초기 화면")
+<br>
+<br>
+![결과16](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/15.png "초기 화면")
+<br>
+<br>
+---
 ---
