@@ -31,12 +31,17 @@ C# 데스크톱 앱 개발 학습 리포지토리
 ![결과4](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/04.png "초기 화면")
 <br>
 <br>
+###### - I002/프로그래밍 저장
+
 ![결과5](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/06.png "초기 화면")
 <br>
 <br>
 ![결과6](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/07.png "초기 화면")
 <br>
 <br>
+
+###### - I002/프로그래밍 
+
 ![결과7](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/05.png "초기 화면")
 <br>
 <br>
