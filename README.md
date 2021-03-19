@@ -20,7 +20,7 @@ C# 데스크톱 앱 개발 학습 리포지토리
 
 ###### - 매뉴로 여러가지 폼 켜기
 
-![결과3](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/02.png "매뉴 스트립트")
+![결과3](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/menu2.png "매뉴 스트립트")
 <br>
 <br>
 ---
