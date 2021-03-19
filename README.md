@@ -25,11 +25,19 @@ C# 데스크톱 앱 개발 학습 리포지토리
 <br>
 ---
 
-##### 0. 책 구분 코드 관리 화면
+##### 1. 책 구분 코드 관리 화면
 ###### - 구분 코드에 대해 저장 및 삭제가 가능하다
 
-![결과1](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/03.png "초기 화면")
+![결과4](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/04.png "초기 화면")
 <br>
 <br>
-
+![결과5](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/06.png "초기 화면")
+<br>
+<br>
+![결과6](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/07.png "초기 화면")
+<br>
+<br>
+![결과7](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/05.png "초기 화면")
+<br>
+<br>
 ---
