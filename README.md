@@ -69,3 +69,19 @@ C# 데스크톱 앱 개발 학습 리포지토리
 <br>
 <br>
 ---
+
+##### 3. 책 리스트 관리 화면
+###### - 책 리스트에 대해 저장 및 삭제가 가능하다
+
+![결과12](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/08.png "초기 화면")
+<br>
+<br>
+---
+
+##### 4. 대여 관리 화면
+###### - 회원의 책 대여를 관리할 수 있다
+
+![결과8](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/08.png "초기 화면")
+<br>
+<br>
+---
