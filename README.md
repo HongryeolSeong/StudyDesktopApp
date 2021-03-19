@@ -80,6 +80,7 @@ C# 데스크톱 앱 개발 학습 리포지토리
 
 ##### 4. 대여 관리 화면
 ###### - 회원의 책 대여를 관리할 수 있다
+###### - 성홍렬 회원의 희란국연가 책 대여 과정
 
 ![결과13](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/13.png "초기 화면")
 <br>
