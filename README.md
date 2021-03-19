@@ -14,7 +14,13 @@ C# 데스크톱 앱 개발 학습 리포지토리
 ![결과1](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/01.png "초기 화면")
 <br>
 <br>
-![결과2](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/02.png "초기 화면")
+![결과2](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/02.png "로그인 성공")
+<br>
+<br>
+
+###### - 매뉴로 여러가지 폼 켜기
+
+![결과3](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/02.png "매뉴 스트립트")
 <br>
 <br>
 ---
