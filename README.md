@@ -14,5 +14,16 @@ C# 데스크톱 앱 개발 학습 리포지토리
 ![결과1](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/01.png "초기 화면")
 <br>
 <br>
+![결과2](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/02.png "초기 화면")
+<br>
+<br>
+---
+
+##### 0. 초기화면
+###### - 첫 화면 : 로그인을 통해 앱에 진입
+
+![결과1](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/01.png "초기 화면")
+<br>
+<br>
 
 ---
