@@ -275,7 +275,5 @@ namespace BookRentalShopApp
 
         }
         #endregion
-
-        
     }
 }

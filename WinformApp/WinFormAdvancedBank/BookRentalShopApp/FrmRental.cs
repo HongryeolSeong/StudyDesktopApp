@@ -119,40 +119,41 @@ namespace BookRentalShopApp
 
         private void DeleteData()
         {
-            try
-            {
-                using (SqlConnection conn = new SqlConnection(Helper.Common.ConnString))
+                try
                 {
-                    if (conn.State == ConnectionState.Closed) conn.Open();
-                    SqlCommand cmd = new SqlCommand();
-                    cmd.Connection = conn;
-
-                    var query = "DELETE FROM [dbo].[bookstbl] " +
-                                " WHERE [Idx] = @Idx ";
-                    cmd.CommandText = query;
-
-                    SqlParameter pIdx = new SqlParameter("@Idx", SqlDbType.Int);
-                    pIdx.Value = TxtIdx.Text;
-                    cmd.Parameters.Add(pIdx);
-
-                    var result = cmd.ExecuteNonQuery();
-                    if (result == 1)
+                    using (SqlConnection conn = new SqlConnection(Helper.Common.ConnString))
                     {
-                        MetroMessageBox.Show(this, "삭제 성공", "삭제",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                    {
-                        MetroMessageBox.Show(this, "삭제 실패", "삭제",
-                           MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        if (conn.State == ConnectionState.Closed) conn.Open();
+                        SqlCommand cmd = new SqlCommand();
+                        cmd.Connection = conn;
+
+                        var query = @"DELETE FROM [dbo].[bookstbl] 
+                                   WHERE [Idx] = @Idx ";
+                        cmd.CommandText = query;
+
+                        var pIdx = new SqlParameter("@Idx", SqlDbType.Int);
+                        pIdx.Value = TxtIdx.Text;
+                        cmd.Parameters.Add(pIdx);
+
+                        var result = cmd.ExecuteNonQuery();
+                        if (result == 1)
+                        {
+                            MetroMessageBox.Show(this, "삭제 성공", "삭제",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MetroMessageBox.Show(this, "삭제 실패", "삭제",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                MetroMessageBox.Show(this, $"예외발생 : {ex.Message}", "오류", MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
-            }
+                catch (Exception ex)
+                {
+                    MetroMessageBox.Show(this, $"예외발생 : {ex.Message}", "오류", MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+            
 
         }
         private void RefreshData()
@@ -274,8 +275,17 @@ namespace BookRentalShopApp
                     var result = cmd.ExecuteNonQuery();
                     if (result == 1)
                     {
-                        MetroMessageBox.Show(this, "저장 성공", "저장",
+                        if (CboRentalState.SelectedValue.ToString() == "R")
+                        {
+                            MetroMessageBox.Show(this, "대여 성공", "대여",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MetroMessageBox.Show(this, "반납 성공", "반납",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        
                     }
                     else
                     {
