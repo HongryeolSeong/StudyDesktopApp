@@ -46,3 +46,26 @@ C# 데스크톱 앱 개발 학습 리포지토리
 <br>
 <br>
 ---
+
+##### 2. 회원 관리 화면
+###### - 회원 리스트에 대해 저장 및 삭제가 가능하다
+
+![결과8](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/08.png "초기 화면")
+<br>
+<br>
+
+###### - 장보고 회원 저장
+
+![결과9](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/09.png "초기 화면")
+<br>
+<br>
+![결과10](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/10.png "초기 화면")
+<br>
+<br>
+
+###### - 장보고 회원 삭제
+
+![결과11](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/11.png "초기 화면")
+<br>
+<br>
+---
