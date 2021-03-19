@@ -4,6 +4,7 @@ C# 데스크톱 앱 개발 학습 리포지토리
 
 ## Project
 - BookRentalShop Application
+- SQL데이터베이스와 연동
 - [프로젝트소스](https://github.com/HongryeolSeong/StudyDesktopApp/tree/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp)
 
 ---
@@ -17,6 +18,7 @@ C# 데스크톱 앱 개발 학습 리포지토리
 ![결과2](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/02.png "로그인 성공")
 <br>
 <br>
+---
 
 ###### - 매뉴 스트립트로 하위 메뉴 선택
 
@@ -31,6 +33,8 @@ C# 데스크톱 앱 개발 학습 리포지토리
 ![결과4](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/04.png "초기 화면")
 <br>
 <br>
+---
+
 ###### - Division I002/프로그래밍 저장
 
 ![결과5](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/06.png "초기 화면")
@@ -39,6 +43,7 @@ C# 데스크톱 앱 개발 학습 리포지토리
 ![결과6](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/07.png "초기 화면")
 <br>
 <br>
+---
 
 ###### - Division I002/프로그래밍 삭제
 
@@ -53,6 +58,7 @@ C# 데스크톱 앱 개발 학습 리포지토리
 ![결과8](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/08.png "초기 화면")
 <br>
 <br>
+---
 
 ###### - 장보고 회원 저장
 
@@ -62,6 +68,7 @@ C# 데스크톱 앱 개발 학습 리포지토리
 ![결과10](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/10.png "초기 화면")
 <br>
 <br>
+---
 
 ###### - 장보고 회원 삭제
 
@@ -80,8 +87,27 @@ C# 데스크톱 앱 개발 학습 리포지토리
 
 ##### 4. 대여 관리 화면
 ###### - 회원의 책 대여를 관리할 수 있다
+###### - 성홍렬 회원의 희란국연가 책 대여 과정
 
-![결과8](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/08.png "초기 화면")
+![결과13](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/13.png "초기 화면")
+<br>
+<br>
+![결과14](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/14.png "초기 화면")
+<br>
+<br>
+![결과15](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/rental.png "초기 화면")
+<br>
+<br>
+![결과16](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/15.png "초기 화면")
 <br>
 <br>
 ---
+
+###### - 성홍렬 회원의 희란국연가 책 반납
+
+![결과17](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/16.png "초기 화면")
+<br>
+<br>
+![결과18](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/17.png "초기 화면")
+<br>
+<br>
