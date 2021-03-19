@@ -16,3 +16,4 @@ C# 데스크톱 앱 개발 학습 리포지토리
 <br>
 
 ---
+<img src="https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/01.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
