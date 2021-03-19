@@ -234,9 +234,11 @@ namespace BookRentalShopApp
                     else // UPDATE
                     {
                         query = @"UPDATE [dbo].[rentaltbl]
-                                   SET [returnDate] = GETDATE()
-                                      ,[rentalState] = 'T'
-                                 WHERE Idx = @Idx";
+                                       SET [returnDate] = CASE @rentalState
+						                                    WHEN 'T' THEN GETDATE()
+						                                    WHEN 'R' THEN NULL END
+                                          ,[rentalState] = @rentalState
+                                     WHERE Idx = @Idx";
                     }
                     cmd.CommandText = query;
 
@@ -260,6 +262,10 @@ namespace BookRentalShopApp
                     }
                     else // 업데이트일때
                     {
+                        SqlParameter pRentalState = new SqlParameter("@rentalState", SqlDbType.Char, 1);
+                        pRentalState.Value = CboRentalState.SelectedValue;
+                        cmd.Parameters.Add(pRentalState);
+
                         SqlParameter pIdx = new SqlParameter("@Idx", SqlDbType.Int);
                         pIdx.Value = TxtIdx.Text;
                         cmd.Parameters.Add(pIdx);

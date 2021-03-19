@@ -274,7 +274,7 @@ namespace BookRentalShopApp
                     cmd.Parameters.Add(pPrice);
 
                     SqlParameter pDescriptions = new SqlParameter("@Descriptions", SqlDbType.NVarChar); // 크기가 모호할땐 빈 값으로
-                    pDescriptions.Value = TxtDescriptions.Text;
+                    pDescriptions.Value = Helper.Common.ReplaceCmdText(TxtDescriptions.Text);
                     cmd.Parameters.Add(pDescriptions);
 
                     if (isNew == false)
