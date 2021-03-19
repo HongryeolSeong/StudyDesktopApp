@@ -9,7 +9,7 @@ C# 데스크톱 앱 개발 학습 리포지토리
 ---
 
 ##### 0. 초기화면
-###### - 첫 화면
+###### - 첫 화면 : 로그인을 통해 앱에 
 
 ![결과1](https://github.com/HongryeolSeong/StudyDesktopApp/blob/main/WinformApp/WinFormAdvancedBank/BookRentalShopApp/resultimg/01.png "초기 화면")
 <br>
