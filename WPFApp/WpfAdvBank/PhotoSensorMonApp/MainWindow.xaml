@@ -7,6 +7,7 @@
     xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
     xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
     xmlns:d3="clr-namespace:InteractiveDataDisplay.WPF;assembly=InteractiveDataDisplay.WPF"
+    xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
     xmlns:local="clr-namespace:PhotoSensorMonApp"
     mc:Ignorable="d"
     Title="PhotoSensor Monitoring" Height="450" Width="800" Initialized="Window_Initialized">
@@ -41,16 +42,31 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
-            <Grid Grid.Row="0" Grid.Column="0" Margin="20">
+            <Grid x:Name="GrdRealTime" Grid.Row="0" Grid.Column="0" Margin="20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*" />
                     <RowDefinition Height="9*" />
                 </Grid.RowDefinitions>
 
-                <TextBlock Text="RealTime Monitoring" />
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="RealTime Monitoring" />
+
+                <lvc:AngularGauge 
+                    x:Name="ChtRealTimeSensor"
+                    Value="{Binding}"
+                    Grid.Row="1" Grid.Column="0"
+                    FromValue="0" ToValue="1023"
+                    TicksForeground="black" Foreground="White"
+                    FontWeight="Bold" FontSize="16"
+                    TicksStep="100"
+                    SectionsInnerRadius="0.6">
+                    <lvc:AngularGauge.Sections >
+                        <lvc:AngularSection FromValue="0" ToValue="700" Fill="White" />
+                        <lvc:AngularSection FromValue="700" ToValue="1023" Fill="Gray" />
+                    </lvc:AngularGauge.Sections>
+                </lvc:AngularGauge>
             </Grid>
 
-            <Grid Grid.Row="0" Grid.Column="1" Margin="20">
+            <Grid x:Name="GrdHistory" Grid.Row="0" Grid.Column="1" Margin="20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*" />
                     <RowDefinition Height="9*" />
@@ -62,6 +78,14 @@
                                   Description="Simple Linechart" 
                                   Stroke="DarkBlue" StrokeThickness="3"/>
                 </d3:Chart>-->
+                <lvc:CartesianChart Grid.Row="1" Grid.Column="0">
+                    <lvc:CartesianChart.Series>
+                        <lvc:LineSeries Values="{Binding}" DataLabels="True" />
+                    </lvc:CartesianChart.Series>
+                    <lvc:CartesianChart.DataTooltip>
+                        <lvc:DefaultTooltip SelectionMode="OnlySender"></lvc:DefaultTooltip>
+                    </lvc:CartesianChart.DataTooltip>
+                </lvc:CartesianChart>
             </Grid>
         </Grid>
     </DockPanel>
