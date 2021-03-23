@@ -88,24 +88,24 @@ namespace IoTSensorMonApp
             // MnuOpen
             // 
             this.MnuOpen.Name = "MnuOpen";
-            this.MnuOpen.Size = new System.Drawing.Size(180, 22);
+            this.MnuOpen.Size = new System.Drawing.Size(139, 22);
             this.MnuOpen.Text = "읽어오기(&O)";
             // 
             // MnuStore
             // 
             this.MnuStore.Name = "MnuStore";
-            this.MnuStore.Size = new System.Drawing.Size(180, 22);
+            this.MnuStore.Size = new System.Drawing.Size(139, 22);
             this.MnuStore.Text = "저장하기(&S)";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(136, 6);
             // 
             // MnuExit
             // 
             this.MnuExit.Name = "MnuExit";
-            this.MnuExit.Size = new System.Drawing.Size(180, 22);
+            this.MnuExit.Size = new System.Drawing.Size(139, 22);
             this.MnuExit.Text = "종료(&X)";
             this.MnuExit.Click += new System.EventHandler(this.MnuExit_Click);
             // 
