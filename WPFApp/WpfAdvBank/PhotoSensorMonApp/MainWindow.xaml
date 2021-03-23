@@ -8,6 +8,7 @@
     xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
     xmlns:d3="clr-namespace:InteractiveDataDisplay.WPF;assembly=InteractiveDataDisplay.WPF"
     xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+    xmlns:oxy="http://oxyplot.org/wpf"
     xmlns:local="clr-namespace:PhotoSensorMonApp"
     mc:Ignorable="d"
     Title="PhotoSensor Monitoring" Height="450" Width="800" Initialized="Window_Initialized">
@@ -17,20 +18,30 @@
                 <MenuItem.Icon>
                     <iconPacks:PackIconMaterial Kind="MonitorEye" Width="14" />
                 </MenuItem.Icon>
-                <MenuItem Header="시작(_B)">
+                <MenuItem x:Name="MnuStart" Header="시작(_B)" Click="MnuStart_Click">
                     <MenuItem.Icon>
                         <iconPacks:PackIconForkAwesome Kind="PlayCircle" Width="14" />
                     </MenuItem.Icon>
                 </MenuItem>
-                <MenuItem Header="종료(_S)">
+                <MenuItem x:Name="MnuStop" Header="종료(_S)" Click="MnuStop_Click">
                     <MenuItem.Icon>
                         <iconPacks:PackIconForkAwesome Kind="StopCircle" Width="14" />
                     </MenuItem.Icon>
                 </MenuItem>
                 <Separator />
-                <MenuItem Header="프로그램종료(_X)">
+                <MenuItem x:Name="MnuExit" Header="프로그램종료(_X)" Click="MnuExit_Click">
                     <MenuItem.Icon>
                         <iconPacks:PackIconForkAwesome Kind="SignOut" Width="14" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="히스토리(_H)">
+                <MenuItem.Icon>
+                    <iconPacks:PackIconMaterial Kind="ChartLine" Width="14" />
+                </MenuItem.Icon>
+                <MenuItem x:Name="MnuLoad" Header="가져오기(_L)" Click="MenuLoad_Click">
+                    <MenuItem.Icon>
+                        <iconPacks:PackIconTypicons Kind="Refresh" />
                     </MenuItem.Icon>
                 </MenuItem>
             </MenuItem>
@@ -38,8 +49,8 @@
 
         <Grid Background="WhiteSmoke">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
             </Grid.ColumnDefinitions>
 
             <Grid x:Name="GrdRealTime" Grid.Row="0" Grid.Column="0" Margin="20">
@@ -48,20 +59,22 @@
                     <RowDefinition Height="9*" />
                 </Grid.RowDefinitions>
 
-                <TextBlock Grid.Row="0" Grid.Column="0" Text="RealTime Monitoring" />
+                <Label Grid.Row="0" Grid.Column="0" 
+                       Content="RealTime Monitoring" 
+                       Style="{StaticResource MahApps.Styles.Label}"/>
 
                 <lvc:AngularGauge 
                     x:Name="ChtRealTimeSensor"
                     Value="{Binding}"
                     Grid.Row="1" Grid.Column="0"
                     FromValue="0" ToValue="1023"
-                    TicksForeground="black" Foreground="White"
+                    TicksForeground="White" Foreground="White"
                     FontWeight="Bold" FontSize="16"
                     TicksStep="100"
                     SectionsInnerRadius="0.6">
-                    <lvc:AngularGauge.Sections >
-                        <lvc:AngularSection FromValue="0" ToValue="700" Fill="White" />
-                        <lvc:AngularSection FromValue="700" ToValue="1023" Fill="Gray" />
+                    <lvc:AngularGauge.Sections>
+                        <lvc:AngularSection FromValue="0" ToValue="700" Fill="gray" />
+                        <lvc:AngularSection FromValue="700" ToValue="1023" Fill="black" />
                     </lvc:AngularGauge.Sections>
                 </lvc:AngularGauge>
             </Grid>
@@ -72,20 +85,28 @@
                     <RowDefinition Height="9*" />
                 </Grid.RowDefinitions>
 
-                <TextBlock Grid.Row="0" Grid.Column="0" Text="Sensoring History" />
+                <Label Grid.Row="0" Grid.Column="0" 
+                       Content="Sensoring History" 
+                       Style="{StaticResource MahApps.Styles.Label}" />
                 <!--<d3:Chart Grid.Row="1" Grid.Column="0" BottomTitle="Argument" LeftTitle="Function" >
                     <d3:LineGraph x:Name="ChtLine" 
                                   Description="Simple Linechart" 
                                   Stroke="DarkBlue" StrokeThickness="3"/>
                 </d3:Chart>-->
-                <lvc:CartesianChart Grid.Row="1" Grid.Column="0">
+                <!--<lvc:CartesianChart Grid.Row="1" Grid.Column="0">
                     <lvc:CartesianChart.Series>
                         <lvc:LineSeries Values="{Binding}" DataLabels="True" />
                     </lvc:CartesianChart.Series>
                     <lvc:CartesianChart.DataTooltip>
                         <lvc:DefaultTooltip SelectionMode="OnlySender"></lvc:DefaultTooltip>
                     </lvc:CartesianChart.DataTooltip>
-                </lvc:CartesianChart>
+                </lvc:CartesianChart>-->
+                <oxy:Plot Grid.Row="1" Grid.Column="0" Background="WhiteSmoke">
+                    <oxy:Plot.Series>
+                        <oxy:LineSeries x:Name="HistoryValues" Color="DarkBlue" MarkerType="None"
+                                        Title="PhotoSensor" RenderOptions.EdgeMode="Unspecified" />
+                    </oxy:Plot.Series>
+                </oxy:Plot>
             </Grid>
         </Grid>
     </DockPanel>
